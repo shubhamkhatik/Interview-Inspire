@@ -28,6 +28,7 @@
 23. Remove a specific character — cleanly.
 24. Find the shortest word in a sentence.
 25. Longest palindromic substring — two-pointer style.
+26. Find the longest word in a given sentence.
 
 ---
 
@@ -52,6 +53,12 @@
 18. Calculate frequency of all elements in O(n).
 19. Product of all elements except self without division.
 20. Trapping Rain Water problem.
+21. Find the maximum count of consecutive 1s in a binary array.
+22. Determine if every value in an array has its corresponding value squared in a second array with identical frequencies.
+23. Deduplicate an array of objects based on a specific key (e.g., unique objects by `name`).
+24. Filter an array of numbers and return a new array containing only even numbers.
+25. Find the largest element in an arbitrarily nested array (e.g., `[13, 4, [581, 1709], 8, [10, [111]]]`).
+26. Implement a function to flatten an arbitrarily nested array into a single-dimensional array (`flat()` polyfill).
 
 ---
 
@@ -123,3 +130,19 @@
 6. Edit Distance (Levenshtein Distance).
 7. House Robber I & II.
 8. Unique Paths in a grid with obstacles.
+
+---
+
+## Basic Math & Number Theory Questions
+1. Check whether a given number is prime (optimized $O(\sqrt{n})$ approach).
+2. Calculate the factorial of a given number (Iterative and Recursive).
+3. Generate the Fibonacci sequence up to N terms.
+4. Find the greatest common divisor (GCD / HCF) of two numbers using the Euclidean algorithm.
+
+---
+
+## Sorting & Searching Algorithms
+1. Implement Merge Sort (Divide and Conquer).
+2. Implement Quick Sort with pivot partitioning.
+3. Sort an array of numbers in ascending and descending order without using built-in `Array.prototype.sort()`.
+4. Binary Search in a sorted array (Iterative and Recursive).
