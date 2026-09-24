@@ -21,16 +21,16 @@ import urllib.error
 
 # Root directories and markdown targets
 TRACK_FILES = {
-    "frontend": "software-engineering/frontend/README.md",
-    "backend": "software-engineering/backend/README.md",
-    "devops": "software-engineering/devops/README.md",
-    "system-design": "software-engineering/system-design/README.md",
-    "ai-foundations": "ai-engineering/foundations/README.md",
-    "ai-llm-rag": "ai-engineering/llm-and-rag/README.md",
-    "ai-agentic": "ai-engineering/agentic-ai/README.md",
-    "ai-mlops": "ai-engineering/mlops-llmops/README.md",
-    "ai-system-design": "ai-engineering/ai-system-design/README.md",
-    "dsa": "dsa-problem-solving/README.md",
+    "frontend": "software-engineering/frontend/frontend.md",
+    "backend": "software-engineering/backend/backend.md",
+    "devops": "software-engineering/devops/devops.md",
+    "system-design": "software-engineering/system-design/system-design.md",
+    "ai-foundations": "ai-engineering/foundations/foundations.md",
+    "ai-llm-rag": "ai-engineering/llm-and-rag/llm-and-rag.md",
+    "ai-agentic": "ai-engineering/agentic-ai/agentic-ai.md",
+    "ai-mlops": "ai-engineering/mlops-llmops/mlops-llmops.md",
+    "ai-system-design": "ai-engineering/ai-system-design/ai-system-design.md",
+    "dsa": "dsa-problem-solving/dsa.md",
 }
 
 INBOX_TEMPLATE = """# 📥 Interview Questions Dropzone (Inbox)
@@ -261,18 +261,21 @@ RAW INPUT QUESTIONS:
 
 INSTRUCTIONS:
 1. Extract every distinct interview question from the RAW INPUT.
-2. For each question:
-   - Identify the best matching file from VALID TARGET FILES.
-   - If the question is ALREADY present in the existing content (even if worded slightly differently), SKIP IT.
+2. STRICT QUESTION-ONLY FORMAT:
+   - Output ONLY the interview question text. DO NOT include answers, explanations, solutions, or conversational text.
+   - DO NOT prefix questions with numbers (e.g. '1. ', 'Q1: ') or bullet points ('- ', '* ').
+   - Wrap code keywords, APIs, function names, and technical terms in backticks (e.g., `useMemo`, `Promise.all()`, `AbortController`, `ETag`, `cgroups`, `pgvector`).
+3. CLASSIFICATION & DEDUPLICATION:
+   - Match the question to the most specific file in VALID TARGET FILES.
+   - If the question is ALREADY present in that file's existing content (even if phrased slightly differently), SKIP IT.
    - Identify the appropriate '## Heading':
      * If it naturally fits an existing '## Heading' in that file, reuse that exact heading name.
-     * If the topic is distinctly new (e.g. '## Testing & QA (Jest, Vitest, Playwright)', '## Web Security', '## State Management'), create a clear, descriptive '## Heading'.
-   - Identify an optional '### Sub-heading' if grouping under a sub-topic is helpful (e.g. '### State Management' under '## React & Next.js'), otherwise set subheading to null.
-3. Clean the question text so it is concise and grammatically well-formed.
+     * If the topic is distinctly new (e.g. '## Testing & QA (Jest, Vitest, Playwright)', '## Web Security', '## State Management'), create a clear, title-cased '## Heading'.
+   - Identify an optional '### Sub-heading' if grouping under a specialized sub-topic is helpful, otherwise set subheading to null.
 4. Output ONLY a valid JSON array of objects with this exact structure:
 [
   {{
-    "file": "software-engineering/frontend/README.md",
+    "file": "software-engineering/frontend/frontend.md",
     "heading": "## React & Next.js",
     "subheading": null,
     "question": "How does React Fiber architecture work internally?"

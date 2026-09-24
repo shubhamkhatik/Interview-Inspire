@@ -1,5 +1,6 @@
-# DSA round 
+# Data Structures & Algorithms (DSA) Interview Questions
 
+---
 
 ## String-Based Questions
 1. Reverse a string — without using built-ins.
@@ -27,26 +28,98 @@
 23. Remove a specific character — cleanly.
 24. Find the shortest word in a sentence.
 25. Longest palindromic substring — two-pointer style.
---------------------------------------------------------
+
+---
+
 ## Array-Based Questions
-26. Reverse an array in-place.
-27. Find the largest and smallest element.
-28. Check for duplicates in an array.
-29. Remove duplicates — return only unique values.
-30. Find the missing number from 1 to N.
-31. Move all zeros to the end — keep order.
-32. Rotate the array left/right by K positions.
-33. Find the Kth largest/smallest element.
-34. Merge two sorted arrays — without using extra space.
-35. Find the intersection of two arrays.
-36. Sort 0s, 1s, and 2s without using sort().
-37. Find subarrays with a given sum.
-38. Detect if a subarray sums to 0.
-39. Find the longest increasing subsequence.
-40. Kadane’s Algorithm — maximum subarray sum.
-41. Check if array is sorted and rotated.
-42. Rearrange array in max-min order alternately.
-43. Find leaders in an array (no greater element to the right).
-44. Calculate frequency of all elements in O(n).
-45. Product of all elements except self.
--------------------------------------------------
+1. Reverse an array in-place.
+2. Find the largest and smallest element.
+3. Check for duplicates in an array.
+4. Remove duplicates — return only unique values.
+5. Find the missing number from 1 to N.
+6. Move all zeros to the end — keep order.
+7. Rotate the array left/right by K positions.
+8. Find the Kth largest/smallest element.
+9. Merge two sorted arrays — without using extra space.
+10. Find the intersection of two arrays.
+11. Sort 0s, 1s, and 2s without using sort() (Dutch National Flag algorithm).
+12. Find subarrays with a given sum.
+13. Detect if a subarray sums to 0.
+14. Kadane’s Algorithm — maximum subarray sum.
+15. Check if array is sorted and rotated.
+16. Rearrange array in max-min order alternately.
+17. Find leaders in an array (no greater element to the right).
+18. Calculate frequency of all elements in O(n).
+19. Product of all elements except self without division.
+20. Trapping Rain Water problem.
+
+---
+
+## Two Pointers & Sliding Window Questions
+1. Two Sum II — Input Array Is Sorted.
+2. 3Sum — Find all unique triplets that sum to zero.
+3. Container With Most Water.
+4. Minimum Size Subarray Sum.
+5. Longest Repeating Character Replacement.
+6. Permutation in String.
+7. Sliding Window Maximum.
+
+---
+
+## Linked List Questions
+1. Reverse a singly linked list (Iterative and Recursive).
+2. Detect a cycle in a linked list (Floyd's Tortoise and Hare algorithm).
+3. Find the starting node of the cycle in a linked list.
+4. Find the middle node of a linked list.
+5. Merge two sorted linked lists.
+6. Remove the Nth node from the end of a list in one pass.
+7. Check if a linked list is a palindrome.
+8. Intersection point of two linked lists.
+9. LRU Cache implementation using Doubly Linked List and Hash Map.
+
+---
+
+## Stacks & Queues Questions
+1. Valid Parentheses matching.
+2. Implement Queue using Stacks (and Stack using Queues).
+3. Min Stack — retrieve the minimum element in O(1) time.
+4. Next Greater Element using Monotonic Stack.
+5. Daily Temperatures.
+6. Largest Rectangle in Histogram.
+7. Evaluate Reverse Polish Notation (RPN).
+
+---
+
+## Trees & Binary Search Trees (BST) Questions
+1. Maximum depth / height of a binary tree.
+2. Check if two binary trees are identical.
+3. Invert / Flip a binary tree.
+4. Diameter of a binary tree.
+5. Level order traversal (BFS) using a queue.
+6. Validate Binary Search Tree (BST property check).
+7. Lowest Common Ancestor (LCA) in BST and Binary Tree.
+8. Construct Binary Tree from Preorder and Inorder Traversal.
+9. Serialize and Deserialize a binary tree.
+
+---
+
+## Graphs Questions
+1. Breadth-First Search (BFS) and Depth-First Search (DFS) implementation.
+2. Number of Connected Components in an undirected graph.
+3. Number of Islands (2D Grid traversal).
+4. Clone Graph.
+5. Course Schedule — Detect cycle in directed graph / Topological Sort (Kahn's Algorithm).
+6. Word Ladder (Shortest transformation path).
+7. Dijkstra's Algorithm for single-source shortest path.
+
+---
+
+## Dynamic Programming (DP) Questions
+1. Climbing Stairs (Fibonacci pattern).
+2. Coin Change problem (Minimum coins to make amount).
+3. 0/1 Knapsack Problem and Unbounded Knapsack.
+4. Longest Common Subsequence (LCS).
+5. Longest Increasing Subsequence (LIS).
+6. Edit Distance (Levenshtein Distance).
+7. House Robber I & II.
+8. Unique Paths in a grid with obstacles.
